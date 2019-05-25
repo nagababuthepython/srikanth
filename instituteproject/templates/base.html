@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Base Pase</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    ul{
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: aqua;
+        margin-top: auto;
+
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display:ruby-base-container;
+        color: royalblue;
+        text-align: center;
+        padding:60px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top:auto;
+    }
+    .active{
+        background-color: yellow;
+    }
+    li a:hover{
+        background-color:skyblue;
+        color: pink;
+    }
+    .footer{
+
+        margin-bottom: auto;
+        background-color: skyblue;
+        color: royalblue;
+        text-align: center;
+    }
+    #h11{
+        font-size: 60px;
+        text-shadow: 5px 5px 5px skyblue;
+        margin-top:auto;
+    }
+    body{
+        background-image: url("sri6.jpg");
+    }
+</style>
+<body>
+<center><h1 id="h11" style="color: blue">Software Group Of Institutions</h1></center>
+<ul>
+    <li><b><a href="/home/">Home</a></b></li>
+    <li><b><a href="/contact/">Contact</a></b></li>
+    <li><b><a href="/courses/">Courses</a></b></li>
+    <li><b><a href="/feedback/">Feedback</a></b></li>
+    <li><b><a href="/team/">Our Team</a></b></li>
+    <li><b><a href="/gallery/">Gallery</a></b></li>
+</ul>
+ {% block content %}
+{% endblock %}
+<footer class="footer">
+    <marquee><h2>Thank You</h2></marquee>
+</footer>
+</body>
+</html>
